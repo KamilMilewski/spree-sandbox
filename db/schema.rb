@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180514084456) do
+ActiveRecord::Schema.define(version: 20180514090708) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
@@ -1055,6 +1055,7 @@ ActiveRecord::Schema.define(version: 20180514084456) do
     t.datetime "updated_at"
     t.string "state"
     t.datetime "deleted_at"
+    t.string "merchant_id"
     t.index ["deleted_at"], name: "index_spree_vendors_on_deleted_at"
     t.index ["name"], name: "index_spree_vendors_on_name", unique: true
     t.index ["state"], name: "index_spree_vendors_on_state"
