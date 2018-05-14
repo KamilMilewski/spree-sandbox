@@ -1,6 +1,7 @@
 module Spree
   module Api
     module ApiHelpers
+      # added :vendor_attributes
       ATTRIBUTES = [
         :vendor_attributes,
         :product_attributes,
@@ -50,9 +51,11 @@ module Spree
         required_fields
       end
 
+      #
       @@vendor_attributes = [
         :id, :name, :merchant_id
       ]
+      #
 
       @@product_attributes = [
         :id, :name, :description, :price, :display_price, :available_on,

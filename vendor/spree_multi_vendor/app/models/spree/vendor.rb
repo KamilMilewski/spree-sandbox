@@ -3,8 +3,8 @@ module Spree
     acts_as_paranoid
 
     validates :name, presence: true, uniqueness: { case_sensitive: false }
-    validates :merchant_id, length: { is: 16 }, allow_blank: true
-    validates_numericality_of :merchant_id, only_integer: true, allow_blank: true
+    validates :merchant_id, length: { is: 16 }, allow_blank: true #
+    validates_numericality_of :merchant_id, only_integer: true, allow_blank: true #
 
     with_options dependent: :destroy do
       has_many :option_types

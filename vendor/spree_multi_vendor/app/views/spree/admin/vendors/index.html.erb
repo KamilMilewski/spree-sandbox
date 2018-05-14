@@ -40,9 +40,9 @@
         <th>
           <%= sort_link @search, :state, I18n.t(:state, scope: 'activerecord.attributes.spree/vendor') %>
         </th>
-        <th>
-          <%= sort_link @search, :merchant_id, I18n.t(:merchant_id, scope: 'activerecord.attributes.spree/vendor') %>
-        </th>
+        <th><!--  -->
+          <%= sort_link @search, :merchant_id, I18n.t(:merchant_id, scope: 'activerecord.attributes.spree/vendor') %><!--  -->
+        </th><!--  -->
         <th>
           <%= sort_link @search, :created_at, I18n.t(:created_at, scope: 'activerecord.attributes.spree/vendor') %>
         </th>
@@ -60,9 +60,9 @@
             <span class="label label-<%= vendor.state.downcase %>"><%= vendor.state.humanize.downcase %></span>
             <span class="icon icon-filter filterable js-add-filter" data-ransack-field="q_state_eq" data-ransack-value="<%= vendor.state %>"></span>
           </td>
-          <td>
-            <%= vendor.merchant_id %>
-          </td>
+          <td><!--  -->
+            <%= vendor.merchant_id %><!--  -->
+          </td><!--  -->
           <td>
             <%= pretty_time(vendor.created_at) %>
           </td>
