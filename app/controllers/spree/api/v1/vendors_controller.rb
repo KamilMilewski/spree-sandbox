@@ -16,6 +16,7 @@ module Spree
           @collection = resource.all
           # @search needs to be defined as this is passed to search_form_for
           @search = @collection.ransack(params[:q])
+          # debugger
           @collection = @search.result.order(created_at: :desc).page(params[:page]).per(params[:per_page])
         end
       end
