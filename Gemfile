@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'spree', '~> 3.4.4'
+gem 'spree_auth_devise', '~> 3.3'
+gem 'spree_multi_vendor', github: 'spree-contrib/spree_multi_vendor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
