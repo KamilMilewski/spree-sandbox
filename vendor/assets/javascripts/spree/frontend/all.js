@@ -11,3 +11,4 @@
 
 //= require_tree .
 //= require spree/frontend/spree_multi_vendor
+//= require spree/frontend/spree_auth
