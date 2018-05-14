@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180514090708) do
+ActiveRecord::Schema.define(version: 20180514102234) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
@@ -1009,6 +1009,7 @@ ActiveRecord::Schema.define(version: 20180514090708) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "spree_api_key", limit: 48
+    t.datetime "deleted_at"
     t.index ["spree_api_key"], name: "index_spree_users_on_spree_api_key"
   end
 
